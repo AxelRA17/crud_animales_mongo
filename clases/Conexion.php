@@ -4,7 +4,7 @@
     class Conexion {
         public static function conectar() {
            try {
-                $servidor = "127.0.0.1";
+                $servidor = "localhost";
                 $puerto = "27017";
                 $usuario = "backend";
                 $password = "backend2025";
