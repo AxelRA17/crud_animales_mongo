@@ -6,9 +6,9 @@
            try {
                 $servidor = "127.0.0.1";
                 $puerto = "27017";
-                $usuario = "mongoadmin";
-                $password = "123456";
-                $BD = "animales_crud";
+                $usuario = "backend";
+                $password = "backend2025";
+                $BD = "axelr_animales";
                 $cadenaConexion = "mongodb://" . 
                                     $usuario . ":" . 
                                     $password . "@". 
