@@ -1,5 +1,5 @@
 <?php 
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/crud_animales/vendor/autoload.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/crud_animales_mongo/vendor/autoload.php";
 
     class Conexion {
         public static function conectar() {
