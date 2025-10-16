@@ -1,5 +1,5 @@
 <?php 
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/crud_mongo/vendor/autoload.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/crud_animales/vendor/autoload.php";
 
     class Conexion {
         public static function conectar() {
@@ -8,7 +8,7 @@
                 $puerto = "27017";
                 $usuario = "mongoadmin";
                 $password = "123456";
-                $BD = "crud";
+                $BD = "animales_crud";
                 $cadenaConexion = "mongodb://" . 
                                     $usuario . ":" . 
                                     $password . "@". 

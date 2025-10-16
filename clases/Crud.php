@@ -3,7 +3,7 @@
         public function mostrarDatos() {
             try {
                 $conexion = Conexion::conectar();
-                $coleccion = $conexion->personas;
+                $coleccion = $conexion->animales;
                 $datos = $coleccion->find();
                 return $datos;
             } catch (\Throwable $th) {
@@ -14,7 +14,7 @@
         public function obtenerDocumento($id) {
             try {
                 $conexion = Conexion::conectar();
-                $coleccion = $conexion->personas;
+                $coleccion = $conexion->animales;
                 $datos = $coleccion->findOne(
                                         array(
                                             '_id' => new MongoDB\BSON\ObjectId($id)
@@ -29,7 +29,7 @@
         public function insertarDatos($datos) {
             try {
                 $conexion = Conexion::conectar();
-                $coleccion = $conexion->personas;
+                $coleccion = $conexion->animales;
                 $respuesta = $coleccion->insertOne($datos);
                 return $respuesta;
             } catch (\Throwable $th) {
@@ -40,7 +40,7 @@
         public function eliminar($id) {
             try {
                 $conexion = Conexion::conectar();
-                $coleccion = $conexion->personas;
+                $coleccion = $conexion->animales;
                 $respuesta = $coleccion->deleteOne(
                                             array(
                                                 "_id" => new MongoDB\BSON\ObjectId($id)
@@ -55,7 +55,7 @@
         public function actualizar($id, $datos) {
             try {
                 $conexion = Conexion::conectar();
-                $coleccion = $conexion->personas;
+                $coleccion = $conexion->animales;
                 $respuesta = $coleccion->updateOne(
                                             ['_id' => new MongoDB\BSON\ObjectId($id)],
                                             [

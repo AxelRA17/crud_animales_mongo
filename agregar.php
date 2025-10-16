@@ -8,19 +8,21 @@
 						<a href="index.php" class="btn btn-outline-info">
 							<i class="fa-solid fa-angles-left"></i> Regresar
 						</a>
-						<h2>Agregar nuevo registro</h2>
+						<h2>Agregar nueva mascota</h2>
 						<form action="./procesos/insertar.php" method="post">
-							<label for="paterno">Apellido paterno</label>
-							<input type="text" class="form-control" id="paterno" name="paterno" required>
-							<label for="materno">Apellido materno</label>
-							<input type="text" class="form-control" id="materno" name="materno">
-							<label for="nombre">Nombre</label>
-							<input type="text" class="form-control" id="nombre" name="nombre" required>
-							<label for="fechaNacimiento">Fecha de nacimiento</label>
-							<input type="date" name="fechaNacimiento" id="fechaNacimiento" class="form-control" required>
-							<button class="btn btn-primary mt-3">
-								<i class="fa-solid fa-floppy-disk"></i> Agregar
-							</button>
+							<label for="nombre_m">Nombre de la mascota</label>
+                            <input type="text" class="form-control" id="nombre_m" name="nombre_m" required>
+                            <label for="edad">Edad</label>
+                            <input type="text" class="form-control" id="edad" name="edad" required>
+                            <label for="especie">Especie</label>
+                            <input type="text" class="form-control" id="especie" name="especie" required>
+                            <label for="raza">Raza</label>
+                            <input type="text" class="form-control" id="raza" name="raza" required>
+                            <label for="nombre_d">Nombre del dueño</label>
+                            <input type="text" class="form-control" id="nombre_d" name="nombre_d" required>
+                            <button class="btn btn-primary mt-3">
+                                <i class="fa-solid fa-floppy-disk"></i> Agregar
+                            </button>
 						</form>
 					</div>
 				</div>

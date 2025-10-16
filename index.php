@@ -19,18 +19,19 @@
 		<div class="col">
 			<div class="card mt-4">
 				<div class="card-body">
-					<h2>Crud con mongodb y php</h2>
+					<h2>Mascotas</h2>
 					<a href="./agregar.php" class="btn btn-primary">
-						<i class="fa-solid fa-user-plus"></i> Agregar nuevo registro
+						<i class="fa-solid fa-user-plus"></i> Agregar nueva mascota
 					</a>
 					<hr>
 
 					<table class="table table-sm table-hover table-bordered">
 						<thead>
-							<th>Apellido paterno</th>
-							<th>Apellido materno</th>
-							<th>Nombre</th>
-							<th>Fecha de nacimiento</th>
+							<th>Nombre de la mascota</th>
+							<th>Edad</th>
+							<th>Especie</th>
+							<th>Raza</th>
+							<th>Nombre del dueño</th>
 							<th>Editar</th>
 							<th>Eliminar</th>
 						</thead>
@@ -39,15 +40,16 @@
 							foreach ($datos as $item) {
 							?>
 								<tr>
-									<td><?php echo $item->paterno; ?></td>
-									<td><?php echo $item->materno; ?></td>
-									<td><?php echo $item->nombre; ?></td>
-									<td><?php echo $item->fecha_nacimiento; ?></td>
+									<td><?php echo $item->nombre_m; ?></td>
+									<td><?php echo $item->edad; ?></td>
+									<td><?php echo $item->especie; ?></td>
+									<td><?php echo $item->raza; ?></td>
+									<td><?php echo $item->nombre_d; ?></td>
 									<td class="text-center">
 										<form action="./actualizar.php" method="POST">
 											<input type="text" hidden value="<?php echo $item->_id ?>" name="id">
 											<button class="btn btn-warning">
-												<i class="fa-solid fa-user-pen"></i>
+												<i class="fa-solid fa-pencil"></i> 
 											</button>
 										</form>
 									</td>
@@ -55,7 +57,7 @@
 										<form action="./eliminar.php" method="POST">
 											<input type="text" hidden value="<?php echo $item->_id ?>" name="id">
 											<button class="btn btn-danger">
-												<i class="fa-solid fa-user-xmark"></i>
+												<i class="fa-solid fa-trash"></i> 
 											</button>
 										</form>
 									</td>

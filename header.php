@@ -7,6 +7,6 @@
     <link rel="stylesheet" href="./public/bootstrap5/bootstrap.min.css">
     <link rel="stylesheet" href="./public/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="./public/css/estilo.css">
-    <title>Crud mongo con php</title>
+    <title>Crud animales</title>
 </head>
 <body>

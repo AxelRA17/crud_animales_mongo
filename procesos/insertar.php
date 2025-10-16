@@ -6,10 +6,11 @@
     $Crud = new Crud();
 
     $datos = array(
-        "paterno" => $_POST['paterno'],
-        "materno" => $_POST['materno'],
-        "nombre" => $_POST['nombre'],
-        "fecha_nacimiento" => $_POST['fechaNacimiento']
+        "nombre_m" => $_POST['nombre_m'],
+        "edad" => $_POST['edad'],
+        "especie" => $_POST['especie'],
+        "raza" => $_POST['raza'],
+        "nombre_d" => $_POST['nombre_d']
     );
 
     $respuesta = $Crud->insertarDatos($datos);

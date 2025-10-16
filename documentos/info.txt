@@ -1,21 +1,21 @@
-use crud;
+use animales_crud;
 
-db.personas.insert({
-    "paterno" : "Martinez",
-    "materno" : "Hernandez",
-    "nombre" : "Juan",
-    "fecha_nacimiento" : "01-04-2000"
+db.animales.insert({
+    "nombre_m" : "Dori",
+    "edad" : 10,
+    "especie" : "perro",
+    "raza" : "mestiza",
+    "nombre_d" : "axel"
 });
 
 db.createUser(
-  {
-    user :  "mongoadmin",
-    pwd :  "123456",
-    roles :  [
-      	 { 	role :  "readWrite",  db :  "crud" 	}
-    ]
-  }
+    {
+        user : "mongoadmin",
+        pwd : "123456",
+        roles : [
+            { role : "readWrite", db : "animales_crud" }
+        ]
+    }
 );
 
-mongo -u  mongoadmin -p 123456 --authenticationDatabase crud
-
+mongosh -u mongoadmin -p 123456 --authenticationDatabase animales_crud

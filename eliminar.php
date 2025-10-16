@@ -20,21 +20,23 @@
                     <a href="index.php" class="btn btn-outline-info">
                         <i class="fa-solid fa-angles-left"></i> Regresar
                     </a>
-                    <h2>Eliminar registro</h2>
+                    <h2>Eliminar mascota</h2>
                     
                     <table class="table table-bordered">
                         <thead>
-                            <th>Apellido paterno</th>
-                            <th>Apellido materno</th>
-                            <th>Nombre</th>
-                            <th>Fecha de nacimiento</th>
+                            <th>Nombre mascota</th>
+                            <th>Edad</th>
+                            <th>Especie</th>
+                            <th>Raza</th>
+                            <th>Nombre del dueño</th>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><?php echo $datos->paterno; ?></td>
-                                <td><?php echo $datos->materno; ?></td>
-                                <td><?php echo $datos->nombre; ?></td>
-                                <td><?php echo $datos->fecha_nacimiento; ?></td>
+                                <td><?php echo $datos->nombre_m; ?></td>
+								<td><?php echo $datos->edad; ?></td>
+								<td><?php echo $datos->especie; ?></td>
+								<td><?php echo $datos->raza; ?></td>
+								<td><?php echo $datos->nombre_d; ?></td>
                             </tr>
                         </tbody>
                     </table>
@@ -48,7 +50,7 @@
                     <form action="./procesos/eliminar.php" method="POST">
                         <input type="text" name="id" value="<?php echo $datos->_id; ?>" hidden>
                         <button class="btn btn-danger">
-                            <i class="fa-solid fa-user-xmark"></i> Eliminar
+                            <i class="fa-solid fa-trash"></i>  Eliminar
                         </button>
                     </form>
                 </div>
